@@ -1,0 +1,11 @@
+//Testing command
+PYTHONPATH="/Users/ai/Projecta/DBMS  proj/backend" backend/venv/bin/pytest tests/ -v
+
+//Backend command
+cd "/Users/ai/Projecta/DBMS  proj/backend"
+source venv/bin/activate
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+//Front end command
+cd "/Users/ai/Projecta/DBMS  proj/frontend"
+npm run dev
